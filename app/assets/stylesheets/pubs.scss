@@ -78,7 +78,8 @@ input:focus{
 
 
 .d-block {
-    max-width: 100%;
+    max-width: 70%;
+    height: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -358,9 +359,12 @@ display:block;
   //margin-right: 5em;
    margin-top: 1em;
 }
-/*.area{
-  float: right;
-}*/
+.area{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
 
 
 

@@ -23,7 +23,7 @@ class PubsController < ApplicationController
     end
     
     #랜덤 광고를 위한 독립적인 변수.
-    @pub2 = Pub.all
+    # @pub2 = Pub.all
     
   end
   

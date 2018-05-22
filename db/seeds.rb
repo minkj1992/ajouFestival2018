@@ -11,18 +11,18 @@ require 'faker'
 include Faker
 
 
-20.times do
-    Pub.create(
-        major: '미디어학과',
-        pubname: Faker::Food.dish,
-        date: Random.rand(1..4),
-        pub_detail: Faker::Food.description,
-        map: ['a','b','c','d'].sample,
-        pubprice: Faker::Avatar.image("my-own-slug", "50x50", "jpg"),
-        pubpost: Faker::Avatar.image("my-own-slug", "50x50", "jpg"),
-        pub_booth: ['pub', 'booth'].sample
-        )
-end
+# 20.times do
+#     Pub.create(
+#         major: '미디어학과',
+#         pubname: Faker::Food.dish,
+#         date: Random.rand(1..4),
+#         pub_detail: Faker::Food.description,
+#         map: ['a','b','c','d'].sample,
+#         pubprice: Faker::Avatar.image("my-own-slug", "50x50", "jpg"),
+#         pubpost: Faker::Avatar.image("my-own-slug", "50x50", "jpg"),
+#         pub_booth: ['pub', 'booth'].sample
+#         )
+# end
 
 
 
