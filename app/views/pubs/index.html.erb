@@ -254,7 +254,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle"><%=x.pubname%></h5>
+          <h3 class="modal-title" id="exampleModalLongTitle"><%=x.pubname%></h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -262,7 +262,11 @@
         <div class="modal-body">
           <%=x.pub_detail%>
           <br>
-          <img src="<%=x.pubpost.url%>" style="width: 100%" alt="pubsimage">
+          <% if x.pubpost.url == nil %>
+            이미지가 없습니다.
+          <% else %>
+            <img src="<%=x.pubpost.url%>" style="width: 100%"  alt="pubsimage">
+          <% end %>
         </div>
       </div>
     </div>
