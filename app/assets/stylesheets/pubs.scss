@@ -262,7 +262,7 @@ body {
 }
 
 .card-body{
-  min-height: 200px;
+  min-height: 230px;
   max-height: 350px;
   background: #FFFFFF;
   width: 100%;
@@ -296,6 +296,9 @@ body {
 
 .pub-description{
   font-weight: 100;
+  height: 100px;
+  max-height: 100px;
+  overflow: hidden;
 }
 
 
@@ -306,7 +309,9 @@ body {
 
 .filters{
   margin-top: 0.7em;
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .ui-group{
   margin-bottom: 0.7em;
@@ -314,6 +319,10 @@ body {
 .bth_botton{
   margin: 1em;
   font-size: 50%;
+}
+.bth_botton_t{
+  text-align: right;
+  margin-top: 10px;
 }
 
 #grad {
@@ -324,47 +333,18 @@ body {
 }
 
 #mobileshow { 
-display:none; 
+display: block; 
 }
-@media screen and (min-width: 600px) {
+
+@media screen and (max-width: 800px) {
 #mobileshow { 
-display:block; 
-  margin-left: 5em;
-  margin-right: 5em;
+  display: none;
+}
+.filters{
+  flex-direction: column;
 }
 }
 
-
-@media screen and (min-width: 600px) {
-#mobile { 
-display:block; 
-  margin-left: 5em;
-  margin-right: 5em;
-
-}
-}
-
-
-
-
-
-.pub{
-  float: left;
- // margin: 10em;
- //margin-left: 5em;
- margin-top: 1em;
-}
-.date{
-  float: right;
-  //margin-right: 5em;
-   margin-top: 1em;
-}
-.area{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0.5em;
-}
 
 
 

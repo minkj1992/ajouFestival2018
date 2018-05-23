@@ -143,13 +143,7 @@
     </form>
     </section>
     
-<!--  <div class="back">
-    <div class="button_base b05_3d_roll">
-        <div>01_Button</div>
-        <div>01_Button</div>
-    </div>
-    </div>
--->
+
 
 <div class="filters">
   <div class="ui-group pub">
@@ -168,11 +162,6 @@
       <button type = "button" class="btn btn-outline-light button btn-sm" data-filter=".3">25DATE</button>
     </div>
   </div>
-<br>
-<br>
-<br>
-<br>
-
 
 
   <div class="ui-group area">
@@ -191,7 +180,7 @@
     
   <div class="all_card row" id="container">
     <% @pub.each do |x|%>
-      <div class="card col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 <%= x.pub_booth%> <%= x.date%> <%= x.map%>">
+      <div class="card col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 <%= x.pub_booth %> <%= x.date %> <%= x.map %>">
         <div class="card-content">
           <div class="card-thumbnail">
         <% if x.map == 'a' %>
@@ -221,18 +210,33 @@
             <div class="club-name a-sec"><%=x.major%></div>
             <span class="pub-name"><%=x.pubname%></span>
             <div class="pub-description"><%=x.pub_detail%></div>
+            <div class ="bth_botton_t">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-<%= x.pub_booth %>-<%= x.date %>-<%= x.map %>">
+                상세내용
+              </button>
+            </div>
           </div>
           <% elsif x.map =='b' %>
           <div class="card-body">
             <div class="club-name b-sec"><%=x.major%></div>
             <span class="pub-name"><%=x.pubname%></span>
             <div class="pub-description"><%=x.pub_detail%></div>
+            <div class ="bth_botton_t">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-<%= x.pub_booth %>-<%= x.date %>-<%= x.map %>">
+                상세내용
+              </button>
+            </div>
           </div>
           <% else %>
           <div class="card-body">
             <div class="club-name c-sec"><%=x.major%></div>
             <span class="pub-name"><%=x.pubname%></span>
             <div class="pub-description"><%=x.pub_detail%></div>
+            <div class ="bth_botton_t">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-<%= x.pub_booth %>-<%= x.date %>-<%= x.map %>">
+                상세내용
+              </button>
+            </div>
           </div>
           <% end %>
         </div>
@@ -241,6 +245,27 @@
   </div>
 
 
+
+
+</div>
+<% @pub.each do |x|%>
+<!-- Modal -->
+  <div class="modal fade" id="modal-<%= x.pub_booth %>-<%= x.date %>-<%= x.map %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle"><%=x.pubname%></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <%=x.pub_detail%>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
 
 
 <script>
