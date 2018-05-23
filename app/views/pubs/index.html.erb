@@ -199,10 +199,10 @@
             <div class="pub-day"><%= x.date+22 %>일</div>
           </div>
         <% end %>
-          <% if x.pubpost.url == nil %>
+          <% if x.image_url == nil %>
             <img src="https://roseandcrown.ca/wp-content/uploads/2015/05/17Untitled.png" alt="pubsimage">
           <% else %>
-            <img src="<%=x.pubpost.url%>" alt="pubsimage">
+            <img src="<%= x.image_url %>" alt="pubsimage">
           <% end %>
           </div>
           <% if x.map == 'a' %>
@@ -261,12 +261,10 @@
         </div>
         <div class="modal-body">
           <%=x.pub_detail%>
-          <br>
-          <% if x.pubpost.url == nil %>
-            이미지가 없습니다.
-          <% else %>
-            <img src="<%=x.pubpost.url%>" style="width: 100%"  alt="pubsimage">
-          <% end %>
+          <div><br></div>
+            <img src="<%= x.image_url %>" style="width: 100%"  alt="pubsimage">
+            <img src="<%= x.pubprice %>" style="width: 100%"  alt="pubsimage">
+            <img src="<%= x.pubpost %>" style="width: 100%"  alt="pubsimage">
         </div>
       </div>
     </div>
