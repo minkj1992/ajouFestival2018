@@ -211,7 +211,7 @@
             <span class="pub-name"><%=x.pubname%></span>
             <div class="pub-description"><%=x.pub_detail%></div>
             <div class ="bth_botton_t">
-              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-<%= x.pub_booth %>-<%= x.date %>-<%= x.map %>">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-<%= x.id %>">
                 상세내용
               </button>
             </div>
@@ -222,7 +222,7 @@
             <span class="pub-name"><%=x.pubname%></span>
             <div class="pub-description"><%=x.pub_detail%></div>
             <div class ="bth_botton_t">
-              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-<%= x.pub_booth %>-<%= x.date %>-<%= x.map %>">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-<%= x.id %>">
                 상세내용
               </button>
             </div>
@@ -233,7 +233,7 @@
             <span class="pub-name"><%=x.pubname%></span>
             <div class="pub-description"><%=x.pub_detail%></div>
             <div class ="bth_botton_t">
-              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-<%= x.pub_booth %>-<%= x.date %>-<%= x.map %>">
+              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#modal-<%= x.id %>">
                 상세내용
               </button>
             </div>
@@ -250,7 +250,7 @@
 </div>
 <% @pub.each do |x|%>
 <!-- Modal -->
-  <div class="modal fade" id="modal-<%= x.pub_booth %>-<%= x.date %>-<%= x.map %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="modal-<%= x.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -261,6 +261,8 @@
         </div>
         <div class="modal-body">
           <%=x.pub_detail%>
+          <br>
+          <img src="<%=x.pubpost.url%>" style="width: 100%" alt="pubsimage">
         </div>
       </div>
     </div>
