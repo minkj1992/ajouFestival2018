@@ -1,24 +1,7 @@
+# 2018 아주대학교 여름 축제 사이트
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
-
-
-Welcome to your Rails project on Cloud9 IDE!
-
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://HOSTNAME/).
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+- AWS `c9`기반에서 6명의 팀원들과 작업하였습니다.
+- `Ruby on Rails`를 사용하여 개발하였습니다.
+- 제 생애 첫 프로젝트이고, 첫 협업 작품입니다.
+- 저는 `백엔드`를 담당하였으며, 검색기능, 주점 데이터 분류기를 생성하였습니다.
+- 해로쿠로 배포하여 2018 아주대 대동제 때 사용하였습니다.

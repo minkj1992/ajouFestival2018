@@ -374,21 +374,34 @@ $avatar-width: 80px;
   display: flex;
   flex-direction: row;
 }
-.moon{
-  width: 40%;
-  background: url(moon.png) no-repeat center;
-  background-size: cover;
-}
+
 .dadu{
   height: 40%;
   background: url(dadu.png) no-repeat 0 18%;
   background-size: cover;
 }
 .two-container{
-  width:60%;
+  width:50%;
   display: flex;
   flex-direction: column;
 }
+.two-container-p{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+}
+.madclown{
+  height: 60%;
+  background: url(madclown.jpg) no-repeat center 0;
+  background-size: cover;
+}
+.mindu{
+  height: 40%;
+  background: url(mindu.jpg) no-repeat center 0;
+  background-size: cover;
+}
+
+
 .text-box-24{
   height: 60%;
   background: #1bc299;
